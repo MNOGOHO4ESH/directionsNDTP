@@ -30,7 +30,6 @@ nav {
         display: block;
         color: #012957;
         font-weight: 700;
-        font-size: 24px;
         transition: 0.3s;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-decoration: none;  
@@ -88,7 +87,6 @@ nav {
             font-weight: 300;
             color: #D0E6FF;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin: 0 0 15vh 0;
             /* margin: 40px 0 40px 0; */
             
             & > span {
@@ -100,7 +98,7 @@ nav {
         .btn {
 
             color: #D0E6FF;
-            padding: 20px 30px;
+            padding: 8px 20px;
             background-color: rgba(202, 202, 202, 0.5);
             border-radius: 12px;
             border: 1px solid #fff;
@@ -340,7 +338,7 @@ nav {
     background: #555; 
 }
 
-@media (min-width: 850px) {
+@media (min-width: 650px) {
     
     .text1, .action {
 
@@ -354,6 +352,7 @@ nav {
 
     .text2  {
 
+        margin: 0 0 15vh 0;
         font-size: 30px;
     }
 
@@ -378,10 +377,15 @@ nav {
         font-size: 19px;
     }
 
+    nav > a {
+
+        font-size: 24px;
+    }
+
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 650px) {
     
     .text1, .action {
 
@@ -390,17 +394,23 @@ nav {
 
     .text1 {
 
-        font-size: 70px;
+        font-size: 30px;
     }
 
     .text2  {
 
-        font-size: 40px;
+        margin: 0 0 5vh 0;
+        font-size: 20px;
     }
 
     .btn {
 
-        font-size: 35px;
+        font-size: 15px;
+    }
+
+    .icon {
+
+        width: 150px;
     }
 
     .questions > div {
@@ -418,5 +428,10 @@ nav {
 
         padding: 12px 20px;
         font-size: 30px;
+    }
+
+    nav > a {
+
+        font-size: 12px;
     }
 }
