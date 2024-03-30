@@ -58,11 +58,9 @@ nav {
     background-image: url(./bg.jpg);
     background-position: center;
 
-    padding-top: 130px;
-
     .container {
         margin: auto;
-        min-height: calc(100dvh - 130px);
+        /* min-height: calc(100dvh - 130px); */
         max-width: 1200px;
         display: flex;
         flex-direction: column;
@@ -176,7 +174,6 @@ nav {
         padding: 12px 20px;
         background: #1050ff;
         color: #f0efef;
-        font-size: 30px;
         border: 2px solid #dfdfdf;
         border-radius: 8px;
         transition: 0.2s;
@@ -217,22 +214,18 @@ nav {
         margin: auto;
         position: relative;
         top: -100%;
-        padding: 50px;
 
         & > .header {
 
             color: rgb(230, 230, 230);
-            font-size: 28px;
             text-align: center;
         }
 
         & > .title {
 
             color: rgb(230, 230, 230);
-            font-size: 26px;
             font-weight: 700;
             text-align: center;
-            margin: 0 0 25px 0;
         }
 
         & > .text3 {
@@ -339,6 +332,21 @@ nav {
 
 @media (min-width: 650px) {
     
+    .hero {
+
+        padding-top: 130px;
+    }
+
+    .container {
+
+        min-height: calc(100dvh - 130px);
+    }
+
+    .header {
+
+        font-size: 28px;
+    }
+
     .text1, .action {
 
         width: 65%;
@@ -382,11 +390,44 @@ nav {
         font-size: 24px;
     }
 
+    .btn_submit {
+
+        font-size: 30px;
+    }
+
+    .title {
+
+        font-size: 26px;
+        margin: 0 0 25px 0;
+    }
+
 }
 
 
 @media (max-width: 650px) {
     
+    .hero {
+
+        padding-top: 75px;
+    }
+
+    .container {
+
+        min-height: calc(100dvh - 75.38px);
+    }
+
+    .header {
+
+        font-size: 22px;
+    }
+
+    .title {
+
+        font-size: 24px;
+        margin: 0;
+        text-decoration: underline;
+    }
+
     .text1, .action {
 
         width: 100%;
@@ -416,23 +457,33 @@ nav {
 
     .questions > div {
 
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .questions > div > label {
 
-        width: 500px;
-        font-size: 23px;
+        width: 340px;
+        font-size: 15px;
     }
 
     .btn_submit {
 
         padding: 12px 20px;
-        font-size: 30px;
+        font-size: 18px;
     }
 
     nav > a {
 
         font-size: 12px;
+    }
+
+    .menu {
+
+        padding: 20px;
+    }
+
+    .text3, .ul, .about_direction {
+
+        display: none;
     }
 }
